@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #383428;
+            padding-top: 80px; 
+            color: white;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: whitesmoke; 
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: white; 
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .home-sci {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .home-sci a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .home-sci a:hover {
+            color: #f7e7ce;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .container2 {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #f7e7ce;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 10px 0 30px;
+            font-size: 1.2em;
+            color: #fff8e7;
+        }
+
+        .biodata, .extra-info {
+            background: #836953;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .biodata strong, .extra-info strong {
+            color: #f7e7ce;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .image-section img {
+            max-width: 800%;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .biodata {
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .bio-image img {
+            width: 200px; 
+            height: auto;
+            border-radius: 10%; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+
+        .bio-text {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .biodata {
+                flex-direction: column; 
+                text-align: center; 
+            }
+
+            .image-section img {
+                height: auto; /* Adjust image height for smaller screens */
+            }
+        }
+
+        .quote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #8fbc8f;
+            margin-top: 30px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">DAS Profile.</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="interest.html">Interest</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Personal Background</h1>
+        <div class="biodata">
+            <div class="bio-image">
+                <img src="me.jpeg" alt="Dhea Alayna Sofea" />
+            </div>
+            <div class="bio-text">
+                <p><strong>Full Name:</strong> Dhea Alayna Sofea</p>
+                <p><strong>Date of Birth:</strong> May 16, 2004</p>
+                <p><strong>Age:</strong> 20 years old</p>
+                <p><strong>Birthplace:</strong> Hospital Nyabau Bintulu</p>
+                <p><strong>Address:</strong> No 37, Lorong Merdang</p>
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1>Family</h1>
+            <div class="biodata">
+                <div class="bio-image">
+                    <img src="f.jpeg" alt="Family" />
+                </div>
+                <div class="bio-text">
+                    <p><strong>Father:</strong> Azlan Hasmy bin Muzakir</p>
+                    <p><strong>Date of Birth:</strong> 11, Februari 1976</p>
+                    <p><strong>Mother:</strong> Nur Airis Arissa binti Tommy</p>
+                    <p><strong>Date of Birth:</strong> 9, May 1982</p>
+                    <p><strong>Siblings:</strong> 8 </p>
+                </div>
+            </div>
+
+            <h2>More About Me</h2>
+            <div class="extra-info">
+                <p><strong>Passion:</strong> I am passionate about traveling. I love learning about new things and contributing to meaningful projects. I'm curious about different cultures and landscapes, traveling might ignite my passion for adventure and learning.</p>
+                <p><strong>Dream:</strong> My goal is to become a cabin crew because I love the idea of traveling the world while meeting new people and exploring different cultures. I’m drawn to the dynamic and fast-paced nature of the job, which requires adaptability, problem-solving, and creativity. Being able to contribute to passengers’ experiences by ensuring their safety and comfort is incredibly meaningful to me. I enjoy the opportunity to make each flight memorable and to work as part of a team in such a global and diverse environment. It's the perfect way to combine my love for travel with my passion for helping others.</p>
+            </div>
+
+            <h2>Personal Highlights</h2>
+            <div class="image-section">
+                <img src="f2.jpeg" alt="A personal highlight image">
+            </div>
+            <p class="quote">"The future belongs to those who believe in the beauty of their dreams."</p>
+        </div>
+    </div>
+
+    <div class="home-sci">
+        <div class="social-links">
+            <a href="https://www.instagram.com/dhealaynaa?igsh=MWpuNHpobXpnYzhhbA==" target="_blank" title="Instagram">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.tiktok.com/@l4ynaasofie?_t=8rkUJDMAj4b&_r=1" target="_blank" title="TikTok">
+                <i class='bx bxl-tiktok'></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: #383428;
+        padding-top: 80px;
+        color: white;
+    }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: whitesmoke;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffefd5;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h2{
+            color: #ffefd5;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .interests {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .interest {
+            background: #836953;
+            border-radius: 10px;
+            padding: 15px;
+            width: 22%; /* Adjusts to fit in one row */
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .interest img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .interest:hover {
+            transform: translateY(-10px);
+            background: #383428;
+        }
+         .second-section .interest img {
+        display: block;
+        margin: 0 auto; 
+    }
+
+   
+    .second-section .interest {
+        text-align: center;
+    }
+
+        .social-links a {
+            font-size: 30px;
+            color: darkslategray;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #ffefd5;
+        }
+        @media (max-width: 768px) {
+    .interest {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">DAS Profile.</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html" class="active">About Me</a>
+            <a href="education.html" class="active">Education</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Favourite Book</h1>
+        <h2>Diving into stories and knowledge through books.</h2>
+        <div class="interests">
+            <div class="interest">
+                <img src="book1.jpg" alt="Reading">
+                <h2>Tales of Celestial Kingdom by Sue Lynn Tan</h2>
+                <p>Her books are enchanting fantasy tales that resonate with readers, blending rich mythology, vivid worlds, and heartfelt emotions which I love.</p>
+            </div>
+            <div class="interest">
+                <img src="book2.jpeg" alt="Watching Netflix">
+                <h2>Midnight Monologue by Charissa Ong Ty</h2>
+                <p>hbxhcb</p>
+                <p>My favourite shows on Netflix are 'Gossip Girl' and 'Elite' as they have similar drama, secrets, and a glamorous yet mysterious vibe.</p>
+            </div>
+            <div class="interest">
+                <img src="book3.jpeg" alt="Cafe Hopping">
+                <h2>Tulisan by Daiyan Trisha</h2>
+                <p>Sip, savor, and explore cafes.</p>
+                <p>My favorite cafes in Kuching are Zero O' Clock and 58 Cafe. They not only have delicious food but also provide a great atmosphere for taking pictures.</p>
+            </div>
+            <div class="interest">
+                <img src="book4.jpeg" alt="Music">
+                <h2>Memasang Sayap yang Patah by Jiwa</h2>
+                <p>Enjoying melodies and discovering new genres.</p>
+                <p>My current favorite genre is RnB. I love songs like 'Nightjar' and 'Luna' by Cemeteries, as well as tracks from CAS.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Favourite Film/Movies</h1>
+        <h2>Escape reality, one episode at a time.</h2>
+        <div class="interests">
+            <div class="interest">
+                <img src="a1.jpg" alt="Reading">
+                <h2>Love Game in Eastern Fantasy</h2>
+                <p>Diving into stories and knowledge through books.</p>
+                <p>My favourite author is Sue Lynn Tan. Her books are enchanting fantasy tales that resonate with readers, blending rich mythology, vivid worlds, and heartfelt emotions which I love.</p>
+            </div>
+            <div class="interest">
+                <img src="a2.jpg" alt="Watching Netflix">
+                <h2>When the Phone Rings</h2>
+                <p>Escape reality, one episode at a time.</p>
+                <p>My favourite shows on Netflix are 'Gossip Girl' and 'Elite' as they have similar drama, secrets, and a glamorous yet mysterious vibe.</p>
+            </div>
+            <div class="interest">
+                <img src="p5.jpeg" alt="Cafe Hopping">
+                <h2>Zombieverse New Blood</h2>
+                <p>Sip, savor, and explore cafes.</p>
+                <p>My favorite cafes in Kuching are Zero O' Clock and 58 Cafe. They not only have delicious food but also provide a great atmosphere for taking pictures.</p>
+            </div>
+            <div class="interest">
+                <img src="a3.jpeg" alt="Music">
+                <h2>Bridgerton</h2>
+                <p>Enjoying melodies and discovering new genres.</p>
+                <p>My current favorite genre is RnB. I love songs like 'Nightjar' and 'Luna' by Cemeteries, as well as tracks from CAS.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Favourite Music</h1>
+        <h2>Enjoying melodies and discovering new genres.</h2>
+        <div class="interests">
+            <div class="interest">
+                <img src="a1.jpg" alt="Reading">
+                <h2>Silver Sable by Cigarettes After Sex</h2>
+                <audio id="music" style="display:none;">
+                    <source src="Nightjar.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="interest">
+                <img src="a2.jpg" alt="Watching Netflix">
+                <h2>Slow Dive by Wave to Earth</h2>
+                <audio id="music" style="display:none;">
+                    <source src="Nightjar.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="interest">
+                <img src="p5.jpeg" alt="Cafe Hopping">
+                <h2>Love. by Wave to Earth</h2>
+                <audio id="music" style="display:none;">
+                    <source src="Nightjar.mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="interest">
+                <img src="a3.jpeg" alt="Music">
+                <h2>Nightjar by Cemeteries</h2>
+                <i class='bx bx-play-circle music-icon' onclick="playMusic()"></i>
+                <audio id="music" style="display:none;">
+                    <source src="Nightjar.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="home-sci">
+        <div class="social-links">
+            <a href="https://www.instagram.com/dhealaynaa?igsh=MWpuNHpobXpnYzhhbA==" target="_blank" title="Instagram">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.tiktok.com/@l4ynaasofie?_t=8rkUJDMAj4b&_r=1" target="_blank" title="TikTok">
+                <i class='bx bxl-tiktok'></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        function playMusic() {
+            var music = document.getElementById("music");
+            var icon = document.querySelector(".music-icon");
+            if (music.paused) {
+                music.play();
+                icon.classList.remove('bx-play-circle');
+                icon.classList.add('bx-pause-circle');
+            } else {
+                music.pause();
+                icon.classList.remove('bx-pause-circle');
+                icon.classList.add('bx-play-circle');
+            }
+        }
+    </script>
+</body>
+</html>
